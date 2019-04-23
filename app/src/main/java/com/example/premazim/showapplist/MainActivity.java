@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("in the array: ", mobileArray.toString());
 
                 ArrayAdapter<String> adapter;
-                adapter new ArrayAdapter<String>(this, R.layout.activity_listview, mobileArray);
+                adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, mobileArray);
 
                 ListView listView = (ListView) findViewById(R.id.mobile_list);
                 listView.setAdapter(adapter);
